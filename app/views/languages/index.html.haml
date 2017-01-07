@@ -1,0 +1,8 @@
+%body
+  .wrapper
+    %p Enter a github username to discover the user's preferred language
+
+    =form_tag(languages_path, method: 'get') do
+      %label{for: 'username'} Username:
+      %input{type: 'text', name: 'username'}
+      %input{type: 'submit', value: 'Show language'}
